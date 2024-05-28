@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumi Verde</title>
+    <link rel="stylesheet" href="../styles/tp-final.css">
+    <link rel="icon" href="../src/Logo-bhumi.png">
+</head>
+<body>
+    <header id="top">
+        <h1>Bhumi Verde</h1>
+        <section class="buttons_header">
+            <a href="#" class="button">Iniciar Sesión</a>
+            <a href="#" class="button">Registrarse</a>   
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobrenosotros" class="button">Sobre Nosotros</a></li>
+            <li><a href="#container_reservas" class="button">Reservar</a></li>
+            <li><a href="#contactanos" class="button">Contactanos</a></li>
+            <li><a href="#nuestro-equipo" class="button">Nuestro equipo</a></li>
+        
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobrenosotros">
+            <h2 class="subtitulos">Sobre Nosotros</h2>
+            <div class="contenedor-sobrenosotros">
+                <article class="contenido-imagen-transparente">
+                    <img src="../src/shampoo-solido.png" alt="">
+                </article>
+                <article class="contenido-texto">
+                    <p>Somos BHUMI VERDE, ofrecemos soluciones para tus necesidades básicas diarias.</p>
+                    <p>Conoce nuestro portafolio de productos ecológicos, packaging sustentable y todo
+                        lo relacionado con cosmética natural y envases amigables con el planeta.</p>
+                </article>
+                <article>
+                    <p class="contenido-visitanos">Visítanos en nuestra sede principal</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9288.92505041785!2d-58.39111493845885!3d-34.600850143177766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1710158476038!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+            </div>
+        </section>  
+
+        <section>
+            <h2 class="subtitulos">Reservas</h2>
+            <section id="container_reservas">
+                <div class="container_img">
+                    <h2>Mapa de Escritorios</h2>
+                    <section id="mapaEscritorios">
+                        <!-- Se generan los escritorios con un solo contenedor usando CSS Grid -->
+                        <article class="escritorio" id="escritorio1">1</article>
+                        <article class="escritorio" id="escritorio2">2</article>
+                        <article class="escritorio" id="escritorio3">3</article>
+                        <article class="escritorio" id="escritorio4">4</article>
+                        <article class="escritorio" id="escritorio5">5</article>
+                        <article class="escritorio" id="escritorio6">6</article>
+                        <article class="escritorio" id="escritorio7">7</article>
+                        <article class="escritorio" id="escritorio8">8</article>
+                        <article class="escritorio" id="escritorio9">9</article>
+                        <article class="escritorio" id="escritorio10">10</article>
+                        <article class="escritorio" id="escritorio11">11</article>
+                        <article class="escritorio" id="escritorio12">12</article>
+                    </section>
+                </div>
+                <div class="container_form_resv">
+                    <form action="">
+                        <label for="Name">Nombre y apellido:</label>
+                        <input id="Name" name="Name" type="text" required>
+
+                        <label for="Mail">Correo electrónico:</label>
+                        <input id="Mail" name="Mail" type="email" required>
+
+                        <label for="Date">Fecha de reserva:</label>
+                        <input id="Date" name="Date" type="date" required>
+                        
+                        <label for="Espacio" class="label">Seleccione un espacio de trabajo:</label>
+                        <div id="Espacio_radio">
+                            <label for="escritorioSelect"></label>
+                            <select id="escritorioSelect">
+                                <option value="" disabled selected>Seleccione un escritorio</option>
+                                <option value="escritorio1">Escritorio 1</option>
+                                <option value="escritorio2">Escritorio 2</option>
+                                <option value="escritorio3">Escritorio 3</option>
+                                <option value="escritorio4">Escritorio 4</option>
+                                <option value="escritorio5">Escritorio 5</option>
+                                <option value="escritorio6">Escritorio 6</option>
+                                <option value="escritorio7">Escritorio 7</option>
+                                <option value="escritorio8">Escritorio 8</option>
+                                <option value="escritorio9">Escritorio 9</option>
+                                <option value="escritorio10">Escritorio 10</option>
+                                <option value="escritorio11">Escritorio 11</option>
+                                <option value="escritorio12">Escritorio 12</option>
+                            </select>
+                            <button type="button" id="seleccionarBtn">Seleccionar</button>
+                            <button type="button" id="deseleccionarBtn">Deseleccionar</button>
+                        </div>    
+                        
+                        <input class="button" type="reset">
+                        <input class="button" type="submit" value="Reservar">
+                    </form>
+                </div>
+
+            </section>
+        </section>
+        
+        <section id="contactanos">
+            <h2 class="subtitulos">Contáctanos</h2>
+            <form action="">
+                <label for="name">Nombre:</label>
+                <input name="name" type="text">
+                
+                <label for="subject">Motivo:</label>
+                <input name="subject" type="text">
+                
+                <label for="message">Consulta:</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+
+        <section id="nuestro-equipo">
+            <h2 class="subtitulos">Nuestro Equipo</h2>
+                <div class="controles" id="contenedor-controles">
+                    <button id="Agregar">Agregar</button>
+                    <button id="Quitar">quitar</button></div>
+            <article id="Persona">
+                <img class="api" id="Foto" src="" alt="">
+                <h2><span id="Nombre"></span></h2>
+            </article>
+        </section>
+        <script src="../js/tp-final.js"></script>
+    </main>
+
+    <footer class="footer">
+        <a href="#top">Bhumi Verde SRL</a>
+        <p>Copyright © 2024 Reservar S.A. || Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

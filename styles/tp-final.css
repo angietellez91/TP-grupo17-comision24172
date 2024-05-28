@@ -1,0 +1,391 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../src/Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body{
+    background-color: rgba(78, 197, 114, 0.644);
+    font-family: Ubuntu, sans-serif;
+}
+
+header, main, footer, nav {
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    color: rgb(6, 34, 31); 
+    /*background-color: rgba(101, 182, 47, 0);*/
+    padding: 10px;
+}
+
+header{
+    background-color:  rgba(101, 182, 47, 0.74);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: rgba(101, 182, 47, 0.74);
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+nav ul li a {
+    color: rgb(6, 34, 31); 
+    display: inline-block;
+    margin-right: 0 10px;
+    /*text-decoration: none;*/
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(64, 224, 125);
+    color: rgb(6, 34, 31);
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: 250ms all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.contenedor-sobrenosotros{
+    padding: 15px;
+    display: flex;
+}
+@keyframes rotateLogo {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    
+}
+img{
+    width: 200px;
+    min-height: 50vh;
+    animation: rotateLogo 5s linear infinite;
+}
+.contenido-imagen-transparente{
+    width: 200px;
+    padding: 15px;
+    display: flex;
+}
+
+.contenido-texto{
+    width: 600px;
+    align-items:center;
+}
+
+/*
+article{
+    border: 1px solid black;
+    background-color: rgb(16, 95, 119);
+    width:380px;
+    min-height: 50vh;
+
+    justify-content: space-evenly;
+    align-items: left;
+
+    margin: 20px;
+}
+
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+*/
+
+.subtitulos {
+    font-size: 1.5em;
+    color: rgb(6, 34, 31); 
+    margin: 20px 0;
+    background-color:  rgba(101, 182, 47, 0.199);
+    padding: 20px 20px 20px 30px; 
+    /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.container_img, .container_form_resv{
+    margin: 20px 0;
+}
+
+#container_reservas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    /*align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;*/
+}
+
+#mapaEscritorios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 100px; /* Ajuste del ancho total de 3 escritorios por fila */
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.escritorio {
+    /*flex: 1 0 30%; /* 3 escritorios por fila */
+    /*box-sizing: border-box;
+    width: 100px;
+    height: 100px;*/
+    background-color: lightgreen;
+    color:rgb(6, 34, 31);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid darkgreen;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*cursor: pointer;
+    border: 2px solid darkgreen;
+    transition: background-color 0.3s;*/
+}
+
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.escritorio.ocupado {
+    background-color: lightcoral;
+    cursor: not-allowed;
+}
+
+/*
+#formSeleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#formSeleccion label, #formSeleccion select, #formSeleccion button {
+    margin: 5px 0;
+}
+.container_form_resv form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.container_form_resv {
+    width: 45%;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+#Espacio_radio {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+
+.footer {
+    background-color:  rgba(101, 182, 47, 0.74);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*/
+a {
+    color: rgb(6, 34, 31); 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+p {
+    font-weight: 100px;
+    color: rgb(6, 34, 31); 
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin: 1.5px;
+    padding: 10px;
+}
+
+.contenido-visitanos {
+    color: rgb(6, 34, 31); 
+    margin-top: 15px;
+    font-weight: bold;
+    margin: 3px;
+    text-align: center;
+    padding: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: rgba(101, 182, 47, 0.74);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(101, 182, 47, 0.9);
+}
+
+footer {
+    background-color: rgba(101, 182, 47, 0.74);
+    color:  rgb(6, 34, 31);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color:  rgb(6, 34, 31);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*persona{
+    min-height: 20vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    padding: 25px;
+    background-color: cadetblue;
+    
+    border-radius: 25px;
+    
+    margin: 10px;
+    
+    
+    width: 50px;
+    height: 20px;
+}*/
+
+#contenedor-controles{
+    display:inline-block;
+/*    flex-wrap: wrap;*/
+    justify-content:center;
+    margin: 5px;
+}
+
+.api {
+    border-radius: 25px;
+    background-color: antiquewhite;
+
+    width: 20%;
+    animation: none;
+}
+
+/*.controles button {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    padding: 10px;
+    flex: 1;  
+    margin: 0 5px;
+    transition: .2s all;
+    border: none;
+    border-radius: 5px;
+}*/
+
+.controles button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    header, main, footer, nav {
+        padding: 5px;
+    }
+    
+    body {
+        font-size: 10px;
+    }
+
+    #mapaEscritorios {
+        width: 100%;
+    }
+
+    .escritorio {
+        flex: 1 0 22%;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header, main, footer, nav {
+        padding: 15px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header, main, footer, nav {
+        padding: 25px;
+    }
+    
+    body {
+        font-size: 20px;
+    }
+
+    #mapaEscritorios {
+        width: 240px;
+    }
+
+    .escritorio {
+        flex: 1 0 30%;
+        height: 80px;
+    }
+}
